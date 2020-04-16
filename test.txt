@@ -49,7 +49,6 @@ d => delete
 
 to create view :
 - name.blade.php
-
 to call view using controller function :
 - retrun view('name')
 
@@ -58,3 +57,5 @@ return view('folder.name')
 
 redirect in controllers :
 - return redirect('url') or return redirect()->back()
+
+test
