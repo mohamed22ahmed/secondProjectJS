@@ -1,0 +1,60 @@
+design patterns :
+MVC 
+m => model (database)
+v = > view (front end)
+c => controller (back-end)
+
+pathes:
+model => app/
+view => resources/views/ .blade.php
+controller => app/http/controllers/
+routes => routes/web.php
+
+settings: 
+.env file
+
+to run project : 
+php artisan serve  => <127.0.0.1:8000>
+
+routes: 
+get -> to get url
+post -> submit form
+put -> for update
+delete -> for delete
+any -> replace all
+resource -> for resource controller
+view -> to return specific view
+
+to recieve dinamic data from the link (forced parameter):
+{name},function($name)
+
+to recieve optional parameter :
+{id?}, function($id=5)
+
+to make controller :
+php artisan make:controller TestController
+
+to make resource controller :
+- php artisan make:controller HelloController --resource
+- php artisan make:controller HelloController -r 
+
+how to call function from controller :
+Route::get('/link', 'controllerName@functionName');
+
+crud operations :
+c => create / insert
+r => read / request
+u => update
+d => delete
+
+to create view :
+- name.blade.php
+
+to call view using controller function :
+- retrun view('name')
+
+if the file exists inside folder :
+return view('folder.name')
+
+redirect in controllers :
+- return redirect('url') or return redirect()->back()
